@@ -205,10 +205,8 @@
 		<table style="padding:5px;width:100%;border:1px solid lightgray">
 			<tr>
 				<td>
-					<span
-						style="float:left;font-size:2em; font-weight:bold;padding:15px; padding-top: 20px; padding-bottom:5px; position:relative;top:90%;">Evaluation
-						Zufriedenheit Essen KLEX</span><img
-						style="float:right;width:50px; padding:3px; padding-top: 5px; padding-bottom:5px; position:relative;top:90%;"
+					<span style="float:left;font-size:2em; font-weight:bold;padding:15px; padding-top: 20px; padding-bottom:5px; position:relative;top:90%;">Evaluation
+						Zufriedenheit Essen KLEX</span><img style="float:right;width:50px; padding:3px; padding-top: 5px; padding-bottom:5px; position:relative;top:90%;"
 						src="http://klex.co.at/bilder/klex_logo.jpg" alt="KLEX Logo" />
 				</td>
 			</tr>
@@ -229,8 +227,8 @@
 			<p>Diese Umfrage soll es nun ermöglichen, das Einholen der Rückmeldungen vergleichbarer zu machen und als
 				Basis für das regelmäßige Einholen von Rückmeldungen dienen.
 			</p>
-			<p> Bitte füllen Sie diesen Fragebogen gemeinsam mit Ihrem Kind/Ihren Kindern aus. Nutzen Sie die
-				allgemeinen Textfelder für konkrete Rückmeldungen.
+			<p> Bitte füllen Sie diesen Fragebogen gemeinsam mit Ihrem Kind für <b>jedes Ihrer Kinder, welches aktuell die Unterstufe der KLEX besucht</b>, jeweils einmal aus.
+				Nutzen Sie die Textfelder für allgemeine Anmerkungen.
 			</p>
 			<p>
 				Die Rückmeldungen erfolgen selbstverständlich anonym.
@@ -246,7 +244,7 @@
 			<h4>Allgemeine Fragen</h4>
 			<br />
 			<p class="question">
-				<b>Welchen Jahrgang besucht Ihr Kind?</b>
+				Welchen Jahrgang besucht Ihr Kind?
 			</p>
 			<table class="answers">
 				<tr>
@@ -257,27 +255,31 @@
 				</tr>
 			</table>
 			<br />
-			<p class="question"><b>Benötigt Ihr Kind ein Spezialmenü (Mehrfachnennungen möglich)?</b></p>
+			<p class="question">Benötigt Ihr Kind ein Spezialmenü (Mehrfachnennungen möglich)?</p>
 			<table class="answers">
 				<tr>
 					<td>
-						<input type="checkbox" name="spezialmenue" value="vegetarisch" /> &nbsp;Vegetarisch</td>
+						<input type="checkbox" name="spezialmenue" value="vegetarisch" /> &nbsp;vegetarisch</td>
 					<td>
-						<input type="checkbox" name="spezialmenue" value="vegan" /> &nbsp;Vegan</td>
+						<input type="checkbox" name="spezialmenue" value="vegan" /> &nbsp;vegan</td>
 					<td>
-						<input type="checkbox" name="spezialmenue" value="glutenfrei" /> &nbsp;Glutenfrei</td>
+						<input type="checkbox" name="spezialmenue" value="glutenfrei" /> &nbsp;glutenfrei</td>
 					<td>
-						<input type="checkbox" name="spezialmenue" value="Sonstiges" /> &nbsp;Sonstiges</td>
+						<input type="checkbox" name="spezialmenue" value="Sonstiges" /> &nbsp;sonstiges</td>
 				</tr>
 			</table>
+			<br />
+			<p class="question"> Falls <b>"sonstiges"</b>, welches?
+			</p>
+			<textarea name="spezialmenuesonstige" cols="82" rows="2" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+
 			<br />
 
 			<h4>Qualität des Essens</h4>
 			</font>
 
 			<br />
-			<p class="question"><b>Wie zufrieden ist Ihr Kind mit dem Geschmack...</b>
-
+			<p class="question">Wie zufrieden ist Ihr Kind mit dem Geschmack...
 				<table class="answers">
 					<tr style="text-align:center">
 						<td></td>
@@ -287,9 +289,6 @@
 						</td>
 						<td>
 							<font size="+1">&#128578;</font><br />zufrieden
-						</td>
-						<td>
-							<font size="+1">&#128528; </font><br />neutral
 						</td>
 						<td>
 							<font size="+1">&#128577;</font><br />unzufrieden
@@ -308,8 +307,6 @@
 						</td>
 						<td class="radio"><input type="radio" name="zufriedenheitsuppen" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="zufriedenheitsuppen" value="5" />
-						</td>
 					</tr>
 					<tr style="height:30px;">
 						<td>der angebotenen süßen Hauptspeisen?</td>
@@ -320,8 +317,6 @@
 						<td class="radio"><input type="radio" name="zufriedenheithauptspeisensuess" value="3" />
 						</td>
 						<td class="radio"><input type="radio" name="zufriedenheithauptspeisensuess" value="4" />
-						</td>
-						<td class="radio"><input type="radio" name="zufriedenheithauptspeisensuess" value="5" />
 						</td>
 					</tr>
 					<tr style="height:30px;">
@@ -334,8 +329,6 @@
 						</td>
 						<td class="radio"><input type="radio" name="zufriedenheithauptspeisenwuerzig" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="zufriedenheithauptspeisenwuerzig" value="5" />
-						</td>
 					</tr>
 					<tr style="height:30px;">
 						<td>der angebotenen Nachspeisen?</td>
@@ -347,11 +340,9 @@
 						</td>
 						<td class="radio"><input type="radio" name="zufriedenheitnachspeisen" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="zufriedenheitnachspeisen" value="5" />
-						</td>
 					</tr>
 					<tr style="height:30px;">
-						<td>der angebotenen Salaten?</td>
+						<td>der angebotenen Salate?</td>
 						<td class="radio"><input type="radio" name="zufriedenheitsalate" value="1" />
 						</td>
 						<td class="radio"><input type="radio" name="zufriedenheitsalate" value="2" />
@@ -360,37 +351,52 @@
 						</td>
 						<td class="radio"><input type="radio" name="zufriedenheitsalate" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="zufriedenheitsalate" value="5" />
-						</td>
 					</tr>
 				</table>
 			</p>
 			<br />
-			<p class="question"> <b>Welche Suppen hätte Ihr Kind gerne öfter?</b>
+			<p class="question"> Welche <b>Suppen</b> hätte Ihr Kind gerne <b>öfter</b>?
 			</p>
-			<textarea name="beliebtesuppen" cols="82" rows="2"
-				style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+			<textarea name="beliebtesuppen" cols="82" rows="2" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
 			<br />
 
-			<p class="question"> <b>Welche Suppen hätte Ihr Kind gerne seltener?</b>
+			<p class="question"> Welche <b>Suppen</b> hätte Ihr Kind gerne <b>seltener</b>?
 			</p>
-			<textarea name="unbeliebtesuppen" cols="82" rows="2"
-				style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+			<textarea name="unbeliebtesuppen" cols="82" rows="2" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
 			<br />
 
-			<p class="question"> <b>Welche Hauptspeisen hätte Ihr Kind gerne öfter?</b>
+			<p class="question"> Welche <b>Hauptspeisen</b> hätte Ihr Kind gerne <b>öfter</b>?
 			</p>
-			<textarea name="beliebtehauptspeisen" cols="82" rows="2"
-				style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+			<textarea name="beliebtehauptspeisen" cols="82" rows="2" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
 			<br />
 
-			<p class="question"> <b>Welche Hauptspeisen hätte Ihr Kind gerne seltener?</b>
+			<p class="question"> Welche <b>Hauptspeisen</b> hätte Ihr Kind gerne <b>seltener</b>?
 			</p>
-			<textarea name="unbeliebtehauptspeisen" cols="82" rows="2"
-				style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+			<textarea name="unbeliebtehauptspeisen" cols="82" rows="2" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
 			<br />
+
+			<p class="question"> Welche <b>Nachspeisen</b> hätte Ihr Kind gerne <b>öfter</b>?
+			</p>
+			<textarea name="beliebtenachspeisen" cols="82" rows="2" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
 			<br />
-			<p class="question"><b>Wie zufrieden ist Ihr Kind insgesamt mit dem Essen?</b>
+
+			<p class="question"> Welche <b>Nachspeisen</b> hätte Ihr Kind gerne <b>seltener</b>?
+			</p>
+			<textarea name="unbeliebtehauptspeisen" cols="82" rows="2" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+			<br />
+
+			<p class="question"> Welche <b>Salate</b> hätte Ihr Kind gerne <b>öfter</b>?
+			</p>
+			<textarea name="beliebtesalate" cols="82" rows="2" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+			<br />
+
+			<p class="question"> Welche <b>Salate</b> hätte Ihr Kind gerne <b>seltener</b>?
+			</p>
+			<textarea name="unbeliebtesalate" cols="82" rows="2" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+			<br />
+
+			<br />
+			<p class="question">Wie zufrieden ist Ihr Kind insgesamt mit der Qualität des Essens?
 				<table class="answers">
 					<tr style="text-align:center">
 						<td></td>
@@ -400,9 +406,6 @@
 						</td>
 						<td>
 							<font size="+1">&#128578;</font><br />zufrieden
-						</td>
-						<td>
-							<font size="+1">&#128528; </font><br />neutral
 						</td>
 						<td>
 							<font size="+1">&#128577;</font><br />unzufrieden
@@ -421,20 +424,17 @@
 						</td>
 						<td class="radio"><input type="radio" name="allgemeinezufriedenheit" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="allgemeinezufriedenheit" value="5" />
-						</td>
 					</tr>
 				</table>
 				<br />
-				<p class="question"> <b>Allgemeines Feedback zum Essen</b>
+				<p class="question"> Allgemeine Anmerkungen zur Qualität des Essens
 				</p>
-				<textarea name="allgemeinerueckmeldung" cols="82" rows="4"
-					style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+				<textarea name="allgemeinanmerkungenqualitaet" cols="82" rows="4" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
 			</p>
 
 			<h4>Essensausgabe</h4>
 			<br />
-			<p class="question"><b>Wie zufrieden ist Ihr Kind mit...</b>
+			<p class="question">Wie zufrieden ist Ihr Kind mit...
 
 				<table class="answers">
 					<tr style="text-align:center">
@@ -445,9 +445,6 @@
 						</td>
 						<td>
 							<font size="+1">&#128578;</font><br />zufrieden
-						</td>
-						<td>
-							<font size="+1">&#128528; </font><br />neutral
 						</td>
 						<td>
 							<font size="+1">&#128577;</font><br />unzufrieden
@@ -466,8 +463,6 @@
 						</td>
 						<td class="radio"><input type="radio" name="temperatur" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="temperatur" value="5" />
-						</td>
 					</tr>
 					<tr style="height:30px;">
 						<td>der verfügbaren Essensmenge?</td>
@@ -479,8 +474,6 @@
 						</td>
 						<td class="radio"><input type="radio" name="verfuegbaremenge" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="verfuegbaremenge" value="5" />
-						</td>
 					</tr>
 					<tr style="height:30px;">
 						<td>der Zubereitung der Speisen?</td>
@@ -491,8 +484,6 @@
 						<td class="radio"><input type="radio" name="geschirr" value="3" />
 						</td>
 						<td class="radio"><input type="radio" name="geschirr" value="4" />
-						</td>
-						<td class="radio"><input type="radio" name="geschirr" value="5" />
 						</td>
 					</tr>
 
@@ -506,8 +497,6 @@
 						</td>
 						<td class="radio"><input type="radio" name="wartezeit" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="wartezeit" value="5" />
-						</td>
 					</tr>
 					<tr style="height:30px;">
 						<td>der Sauberkeit des Geschirrs?</td>
@@ -519,15 +508,16 @@
 						</td>
 						<td class="radio"><input type="radio" name="geschirr" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="geschirr" value="5" />
-						</td>
 					</tr>
 				</table>
 			</p>
+			<p class="question"> Allgemeine Anmerkungen zur Essensausgabe
+			</p>
+			<textarea name="allgemeinanmerkungenausgabe" cols="82" rows="4" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
 			<br />
 			<h4>Ausrichtung</h4>
 			<br />
-			<p class="question"><b>Wir finden, Essen soll in erster Linie...</b>
+			<p class="question">Wir finden, Essen soll in erster Linie...
 
 				<table class="answers" width="90%">
 					<tr style="text-align:center">
@@ -538,9 +528,6 @@
 						</td>
 						<td width="12%">
 							<font size="+1">&#x1F44D;</font><br />trifft eher zu
-						</td>
-						<td width="12%">
-							<font size="+1">- </font><br />weder noch
 						</td>
 						<td width="12%">
 							<font size="+1">&#x1F44e;</font><br />trifft eher nicht zu
@@ -559,8 +546,6 @@
 						</td>
 						<td class="radio"><input type="radio" name="essenmussgutschmecken" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="essenmussgutschmecken" value="5" />
-						</td>
 					</tr>
 					<tr style="height:30px;">
 						<td>gesund sein</td>
@@ -571,8 +556,6 @@
 						<td class="radio"><input type="radio" name="essenmussgesundsein" value="3" />
 						</td>
 						<td class="radio"><input type="radio" name="essenmussgesundsein" value="4" />
-						</td>
-						<td class="radio"><input type="radio" name="essenmussgesundsein" value="5" />
 						</td>
 					</tr>
 					<tr style="height:30px;">
@@ -585,8 +568,6 @@
 						</td>
 						<td class="radio"><input type="radio" name="essenmusssattmachen" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="essenmusssattmachen" value="5" />
-						</td>
 					</tr>
 					<tr style="height:30px;">
 						<td>biologisch und nachhaltig sein</td>
@@ -598,10 +579,29 @@
 						</td>
 						<td class="radio"><input type="radio" name="essenmussnachhaltigsein" value="4" />
 						</td>
-						<td class="radio"><input type="radio" name="essenmussnachhaltigsein" value="5" />
+					</tr>
+					<tr style="height:30px;">
+						<td>qualitativ hochwertig sein</td>
+						<td class="radio"><input type="radio" name="essenmusshochwertigsein" value="1" />
+						</td>
+						<td class="radio"><input type="radio" name="essenmusshochwertigsein" value="2" />
+						</td>
+						<td class="radio"><input type="radio" name="essenmusshochwertigsein" value="3" />
+						</td>
+						<td class="radio"><input type="radio" name="essenmusshochwertigsein" value="4" />
 						</td>
 					</tr>
 				</table>
+			</p>
+			<p class="question"> Allgemeine Anmerkungen zur Ausrichtung
+			</p>
+			<textarea name="allgemeinanmerkungenausrichtung" cols="82" rows="4" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+			<br />
+			<h4>Sonstiges</h4>
+			<br />
+			<p class="question">Falls Sie noch weitere Anmerkungen haben, nutzen Sie bitte das folgende Feld:
+			</p>
+			<textarea name="sonstigeanmerkungen" cols="82" rows="4" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
 			</p>
 
 			<p><strong>Herzlichen Dank für Ihre Teilnahme!</strong></p>
@@ -610,11 +610,9 @@
 
 			<p style="border: 1px solid #dadce2;margin-left:20px;margin-top:20px"></p>
 			<center>
-				<input type="submit" name="Send" value="Fragebogen abschicken"
-					style="font-weight:bold;padding-top:7px;padding-bottom:7px;padding-right:7px;padding-left:7px;color:green" />
+				<input type="submit" name="Send" value="Fragebogen abschicken" style="font-weight:bold;padding-top:7px;padding-bottom:7px;padding-right:7px;padding-left:7px;color:green" />
 				&nbsp;&nbsp;&nbsp;
-				<input type="reset" value="Zur&uuml;cksetzen"
-					style="padding-top:7px;padding-bottom:7px;padding-right:7px;padding-left:7px;color:red" />
+				<input type="reset" value="Zur&uuml;cksetzen" style="padding-top:7px;padding-bottom:7px;padding-right:7px;padding-left:7px;color:red" />
 			</center>
 			<br />
 			<p style="padding:10px;color:#AAAABB;">Bei Fragen wenden Sie sich bitte an <a
