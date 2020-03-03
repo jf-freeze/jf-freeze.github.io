@@ -265,6 +265,8 @@
 					<td>
 						<input type="checkbox" name="spezialmenue" value="glutenfrei" /> &nbsp;glutenfrei</td>
 					<td>
+						<input type="checkbox" name="spezialmenue" value="laktosefrei" /> &nbsp;laktosefrei</td>
+					<td>
 						<input type="checkbox" name="spezialmenue" value="Sonstiges" /> &nbsp;sonstiges</td>
 				</tr>
 			</table>
@@ -592,20 +594,149 @@
 						</td>
 					</tr>
 				</table>
-			</p>
-			<p class="question"> Allgemeine Anmerkungen zur Ausrichtung
-			</p>
-			<textarea name="allgemeinanmerkungenausrichtung" cols="82" rows="4" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
-			<br />
-			<h4>Sonstiges</h4>
-			<br />
-			<p class="question">Falls Sie noch weitere Anmerkungen haben, nutzen Sie bitte das folgende Feld:
-			</p>
-			<textarea name="sonstigeanmerkungen" cols="82" rows="4" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+				<br />
+				<p class="question">Wir können uns vorstellen, dass das angebotene Essen
+
+					<table class="answers" width="90%">
+						<tr style="text-align:center">
+							<td width="20%"></td>
+							<td width="12%">
+								<font size="+1">
+									&#x1F44D; &#x1F44D;</font><br />trifft zu
+							</td>
+							<td width="12%">
+								<font size="+1">&#x1F44D;</font><br />trifft eher zu
+							</td>
+							<td width="12%">
+								<font size="+1">&#x1F44e;</font><br />trifft eher nicht zu
+							</td>
+							<td width="12%">
+								<font size="+1">&#x1F44e; &#x1F44e;</font><br />trifft nicht zu
+							</td>
+						</tr>
+						<tr style="height:30px;">
+							<td>ausschließlich vegan ist</td>
+							<td class="radio"><input type="radio" name="essenmussgutschmecken" value="1" />
+							</td>
+							<td class="radio"><input type="radio" name="essenmussgutschmecken" value="2" />
+							</td>
+							<td class="radio"><input type="radio" name="essenmussgutschmecken" value="3" />
+							</td>
+							<td class="radio"><input type="radio" name="essenmussgutschmecken" value="4" />
+							</td>
+						</tr>
+						<tr style="height:30px;">
+							<td> ausschließlich vegetarisch ist</td>
+							<td class="radio"><input type="radio" name="essenmusssattmachen" value="1" />
+							</td>
+							<td class="radio"><input type="radio" name="essenmusssattmachen" value="2" />
+							</td>
+							<td class="radio"><input type="radio" name="essenmusssattmachen" value="3" />
+							</td>
+							<td class="radio"><input type="radio" name="essenmusssattmachen" value="4" />
+							</td>
+						</tr>
+						<tr style="height:30px;">
+							<td>auch Fleischmenüs umfasst</td>
+							<td class="radio"><input type="radio" name="essenmussnachhaltigsein" value="1" />
+							</td>
+							<td class="radio"><input type="radio" name="essenmussnachhaltigsein" value="2" />
+							</td>
+							<td class="radio"><input type="radio" name="essenmussnachhaltigsein" value="3" />
+							</td>
+							<td class="radio"><input type="radio" name="essenmussnachhaltigsein" value="4" />
+							</td>
+						</tr>
+					</table>
+				</p>
+				<p class="question"> Allgemeine Anmerkungen zur Ausrichtung
+				</p>
+				<textarea name="allgemeinanmerkungenausrichtung" cols="82" rows="4" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
+				<br />
+				<h4>Preisliche Gestaltung</h4>
+				<br />
+				<p class="question">Der aktuelle Menüpreis beträgt €5,90. Dieser Preis...
+
+					<table class="answers" width="90%">
+						<tr style="text-align:center">
+							<td width="20%"></td>
+							<td width="12%">
+								<font size="+1">
+									&#x1F44D; &#x1F44D;</font><br />trifft zu
+							</td>
+							<td width="12%">
+								<font size="+1">&#x1F44D;</font><br />trifft eher zu
+							</td>
+							<td width="12%">
+								<font size="+1">&#x1F44e;</font><br />trifft eher nicht zu
+							</td>
+							<td width="12%">
+								<font size="+1">&#x1F44e; &#x1F44e;</font><br />trifft nicht zu
+							</td>
+						</tr>
+						<tr style="height:30px;">
+							<td>ist zu hoch</td>
+							<td class="radio"><input type="radio" name="preiszuhoch" value="1" />
+							</td>
+							<td class="radio"><input type="radio" name="preiszuhoch" value="2" />
+							</td>
+							<td class="radio"><input type="radio" name="preiszuhoch" value="3" />
+							</td>
+							<td class="radio"><input type="radio" name="preiszuhoch" value="4" />
+							</td>
+						</tr>
+						<tr style="height:30px;">
+							<td> ist angemessen</td>
+							<td class="radio"><input type="radio" name="preisistangemessen" value="1" />
+							</td>
+							<td class="radio"><input type="radio" name="preisistangemessen" value="2" />
+							</td>
+							<td class="radio"><input type="radio" name="preisistangemessen" value="3" />
+							</td>
+							<td class="radio"><input type="radio" name="preisistangemessen" value="4" />
+							</td>
+						</tr>
+						<tr style="height:30px;">
+							<td>könnte auch höher sein, falls dadurch eine höhere Qualität geliefert werden kann</td>
+							<td class="radio"><input type="radio" name="hoehererpreisdenkbar" value="1" />
+							</td>
+							<td class="radio"><input type="radio" name="hoehererpreisdenkbar" value="2" />
+							</td>
+							<td class="radio"><input type="radio" name="hoehererpreisdenkbar" value="3" />
+							</td>
+							<td class="radio"><input type="radio" name="hoehererpreisdenkbar" value="4" />
+							</td>
+						</tr>
+					</table>
+				</p>
+				<br />
+				<p class="question">Falls für eine höhere Qualität der Preis höher sein müsste, wie viel wäre für Sie angemessen?
+				</p>
+				<table class="answers">
+					<tr>
+						<td>
+							<input type="checkbox" name="denkbarekosten" value="7,50" /> &nbsp;bis zu €7,50</td>
+						<td>
+							<input type="checkbox" name="denkbarekosten" value="7" /> &nbsp;bis zu €7</td>
+						<td>
+							<input type="checkbox" name="denkbarekosten" value="6,50" /> &nbsp;bis zu €6,50</td>
+						<td>
+							<input type="checkbox" name="denkbarekosten" value="6" /> &nbsp;bis zu €6</td>
+				</table>
+				<br />
+				<h4>Sonstiges</h4>
+				<br />
+				<p class="question">Falls Sie noch weitere Anmerkungen haben, nutzen Sie bitte das folgende Feld:
+				</p>
+				<textarea name="sonstigeanmerkungen" cols="82" rows="4" style="border: 1px solid #dadce2;margin-left:20px"></textarea>
 			</p>
 
 			<p><strong>Herzlichen Dank für Ihre Teilnahme!</strong></p>
 			<p>
+				Abschließend möchten wir an die Möglichkeiten erinnern, konkrete Rückmeldungen zum Essen gleich unmittelbar bei Frau Weiß oder unter der
+				Adresse <a href="mailto:mittagessen@klex.co.at?Subject=Rückmeldung Mittagessen">mittagessen@klex.co.at</a> deponieren zu können. Ihr Feedback wird unmittelbar für die Verbesserung der
+				angebotenen Speisen genutzt!
+
 			</p>
 
 			<p style="border: 1px solid #dadce2;margin-left:20px;margin-top:20px"></p>
